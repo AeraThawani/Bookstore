@@ -1,0 +1,522 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Book_Town.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>ADMIN PANEL </title>
+ <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+   
+      
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+      <link rel="stylesheet" href="css/backend-plugin.min.css"/>
+      <link rel="stylesheet" href="../assets/css/backend.css?v=1.0.0"/>
+      <link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css"/>
+      <link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css"/>
+      
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-calendar/dist/tui-calendar.css"/>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-date-picker/dist/tui-date-picker.css"/>
+      <link rel="stylesheet" href="../assets/vendor/tui-calendar/tui-time-picker/dist/tui-time-picker.css"/>
+
+    <!---icon link-->
+    <link href="https://cdn.remixicon.com/releases/v1.2.2/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet" />
+
+  
+    <link href="css2/back1.css" rel="stylesheet" />
+    <link href="css2/back2.css" rel="stylesheet" />
+    <link href="css2/back3.css" rel="stylesheet" />
+    <link href="css2/back4.css" rel="stylesheet" />
+    <link href="css2/back5.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+
+   
+
+    <header >
+        
+    
+        <div class="iq-top-navbar">
+            <div class="iq-navbar-custom">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <div class="iq-navbar-logo d-flex align-items-center justify-content-between">
+                    
+                    </div>
+                 
+                        <h5>Dashboard</h5>
+                
+                    <div class="d-flex align-items-center">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-label="Toggle navigation">
+                            <i class="ri-menu-3-line"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto navbar-list align-items-center">
+                                <li>
+                                    <div class="iq-search-bar device-search">
+                                        <form action="#" class="searchbox">
+                                            <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                                            <input type="text" class="text search-input" placeholder="Search here..." />
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon search-content">
+                                    <a href="#" class="search-toggle rounded" id="dropdownSearch" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <i class="ri-search-line"></i>
+                                       
+
+                                    </a>
+                                    <div class="iq-search-bar iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownSearch">
+                                        <form action="#" class="searchbox p-2">
+                                            <div class="form-group mb-0 position-relative">
+                                                <input type="text" class="text search-input font-size-12"
+                                                    placeholder="type here to search...">
+                                                <a href="#" class="search-link"><i class="las la-search"></i></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon nav-item-icon dropdown">
+                                    <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton2"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-mail">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span class="bg-primary"></span>
+                                    </a>
+                                    <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <div class="card shadow-none m-0">
+                                            <div class="card-body p-0 ">
+                                                <div class="cust-title p-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0">All Messages</h5>
+                                                        <a class="badge badge-primary badge-card" href="#">3</a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-3 pt-0 pb-0 sub-card">
+                                                    <a href="#" class="iq-sub-card">
+                                                        <div class="media align-items-center cust-card py-3 border-bottom">
+                                                            <div class="">
+                                                                <img class="avatar-50 rounded-small"
+                                                                    src="../assets/images/user/01.jpg" alt="01">
+                                                            </div>
+                                                            <div class="media-body ml-3">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h6 class="mb-0">Emma Watson</h6>
+                                                                    <small class="text-dark"><b>12 : 47 pm</b></small>
+                                                                </div>
+                                                                <small class="mb-0">Lorem ipsum dolor sit amet</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="iq-sub-card">
+                                                        <div class="media align-items-center cust-card py-3 border-bottom">
+                                                            <div class="">
+                                                                <img class="avatar-50 rounded-small"
+                                                                    src="../assets/images/user/02.jpg" alt="02">
+                                                            </div>
+                                                            <div class="media-body ml-3">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h6 class="mb-0">Ashlynn Franci</h6>
+                                                                    <small class="text-dark"><b>11 : 30 pm</b></small>
+                                                                </div>
+                                                                <small class="mb-0">Lorem ipsum dolor sit amet</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="iq-sub-card">
+                                                        <div class="media align-items-center cust-card py-3">
+                                                            <div class="">
+                                                                <img class="avatar-50 rounded-small"
+                                                                    src="03.jpg" alt="03">
+                                                            </div>
+                                                            <div class="media-body ml-3">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h6 class="mb-0">Kianna Carder</h6>
+                                                                    <small class="text-dark"><b>11 : 21 pm</b></small>
+                                                                </div>
+                                                                <small class="mb-0">Lorem ipsum dolor sit amet</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <a class="right-ic btn btn-primary btn-block position-relative p-2" href="#"
+                                                    role="button">View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-icon nav-item-icon dropdown">
+                                    <a href="#" class="search-toggle dropdown-toggle" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-bell">
+                                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        </svg>
+                                        <span class="bg-primary "></span>
+                                    </a>
+                                    <div class="iq-sub-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="card shadow-none m-0">
+                                            <div class="card-body p-0 ">
+                                                <div class="cust-title p-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0">Notifications</h5>
+                                                        <a class="badge badge-primary badge-card" href="#">3</a>
+                                                    </div>
+                                                </div>
+                                                <div class="px-3 pt-0 pb-0 sub-card">
+                                                    <a href="#" class="iq-sub-card">
+                                                        <div class="media align-items-center cust-card py-3 border-bottom">
+                                                            <div class="">
+                                                                <img class="avatar-50 rounded-small"
+                                                                    src="../assets/images/user/01.jpg" alt="01">
+                                                            </div>
+                                                            <div class="media-body ml-3">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h6 class="mb-0">Emma Watson</h6>
+                                                                    <small class="text-dark"><b>12 : 47 pm</b></small>
+                                                                </div>
+                                                                <small class="mb-0">Lorem ipsum dolor sit amet</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="iq-sub-card">
+                                                        <div class="media align-items-center cust-card py-3 border-bottom">
+                                                            <div class="">
+                                                                <img class="avatar-50 rounded-small"
+                                                                    src="../assets/images/user/02.jpg" alt="02">
+                                                            </div>
+                                                            <div class="media-body ml-3">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h6 class="mb-0">Ashlynn Franci</h6>
+                                                                    <small class="text-dark"><b>11 : 30 pm</b></small>
+                                                                </div>
+                                                                <small class="mb-0">Lorem ipsum dolor sit amet</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="iq-sub-card">
+                                                        <div class="media align-items-center cust-card py-3">
+                                                            <div class="">
+                                                                <img class="avatar-50 rounded-small"
+                                                                    src="../assets/images/user/03.jpg" alt="03">
+                                                            </div>
+                                                            <div class="media-body ml-3">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <h6 class="mb-0">Kianna Carder</h6>
+                                                                    <small class="text-dark"><b>11 : 21 pm</b></small>
+                                                                </div>
+                                                                <small class="mb-0">Lorem ipsum dolor sit amet</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <a class="right-ic btn btn-primary btn-block position-relative p-2" href="#"
+                                                    role="button">View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                              
+                                
+                                
+                                
+                                <li class="nav-item nav-icon dropdown caption-content">
+                                    <a href="#" class="search-toggle dropdown-toggle  d-flex align-items-center" id="dropdownMenuButton4"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000" width="30px" height="30px">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                                <rect x="0" fill="none" width="20" height="20"></rect>
+                                                <g>
+                                                    <path d="M10 9.25c-2.27 0-2.73-3.44-2.73-3.44C7 4.02 7.82 2 9.97 2c2.16 0 2.98 2.02 2.71 3.81 0 0-.41 3.44-2.68 3.44zm0 2.57L12.72 10c2.39 0 4.52 2.33 4.52 4.53v2.49s-3.65 1.13-7.24 1.13c-3.65 0-7.24-1.13-7.24-1.13v-2.49c0-2.25 1.94-4.48 4.47-4.48z"></path>
+                                                </g>
+                                            </g>
+
+                                        </svg>
+
+
+
+                                        <div class="caption ml-3">
+                                            <h6 class="mb-0 line-height">Savannah Nguyen<i class="las la-angle-down ml-2"></i></h6>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right border-none" aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-01-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            <a href="../app/user-profile.html">My Profile</a>
+                                        </li>
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-02-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                            </svg>
+                                            <a href="../app/user-profile-edit.html">Edit Profile</a>
+                                        </li>
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-03-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            <a href="../app/user-account-setting.html">Account Settings</a>
+                                        </li>
+                                        <li class="dropdown-item d-flex svg-icon">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-04-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                            </svg>
+                                            <a href="../app/user-privacy-setting.html">Privacy Settings</a>
+                                        </li>
+                                        <li class="dropdown-item  d-flex svg-icon border-top">
+                                            <svg class="svg-icon mr-0 text-primary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                            </svg>
+                                            <a href="../backend/auth-sign-in.html">Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+    </header>
+    
+
+
+<!---End of header-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Sidepanel--->
+
+    <aside>
+       
+
+      <div class="iq-sidebar  sidebar-default ">
+          <div class="iq-sidebar-logo d-flex align-items-center">
+           
+               
+              <img src="/images/admin.png" />
+             
+              <div class="iq-menu-bt-sidebar ml-0">
+                  <i class="las la-bars wrapper-menu"></i>
+              </div>
+          </div>
+
+
+
+
+
+          <div class="data-scrollbar" data-scroll="1">
+              <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">
+                     
+                      
+                      
+                      
+                      <li class="">
+                          <a href="WebForm1.aspx" class="svg-icon">                        
+                              <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" ></path>
+                                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                              </svg>
+                              <span class="ml-4">Dashboard</span>
+                          </a>
+                      </li>
+
+
+
+                      <li class="">
+                          <a href="bk.aspx" class="svg-icon">                        
+                               <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" >
+                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"   stroke-width="0.144"></g><g id="SVGRepo_iconCarrier">
+                                      <path d="M3 6C3 4.34315 4.34315 3 6 3H7C8.65685 3 10 4.34315 10 6V7C10 8.65685 8.65685 10 7 10H6C4.34315 10 3 8.65685 3 7V6Z"stroke="currentColor" stroke-width="2"></path>
+                                      <path d="M14 6C14 4.34315 15.3431 3 17 3H18C19.6569 3 21 4.34315 21 6V7C21 8.65685 19.6569 10 18 10H17C15.3431 10 14 8.65685 14 7V6Z"stroke="currentColor" stroke-width="2"></path>
+                                      <path d="M14 17C14 15.3431 15.3431 14 17 14H18C19.6569 14 21 15.3431 21 17V18C21 19.6569 19.6569 21 18 21H17C15.3431 21 14 19.6569 14 18V17Z"stroke="currentColor" stroke-width="2"></path>
+                                      <path d="M3 17C3 15.3431 4.34315 14 6 14H7C8.65685 14 10 15.3431 10 17V18C10 19.6569 8.65685 21 7 21H6C4.34315 21 3 19.6569 3 18V17Z"stroke="currentColor" stroke-width="2"></path>
+                                  </g></svg>
+                              <span class="ml-4">M_Category</span>
+                          </a>
+                      </li>
+
+
+                      <li class="">
+                          <a href="../backend/page-task.html" class="svg-icon">
+                              <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="25px" height="25px" viewBox="0 0 14 14" id="svg2" stroke="currentColor" >
+                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                      <metadata id="metadata8">
+                                          <rdf:rdf>
+                                              <cc:work rdf:about="">
+                                                  <dc:format>image/svg+xml</dc:format>
+                                                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                                                  <dc:title></dc:title>
+                                              </cc:work>
+                                          </rdf:rdf>
+                                      </metadata>
+                                      <defs id="defs6"></defs>
+                                      <rect width="14" height="14" x="0" y="0" id="canvas" style="fill: none; stroke: currentColor ; visibility: hidden"></rect>
+                                      <path d="M 2,0 C 0.491525,0 0,1 0,2 0.02381,3 0.542373,4 2,4 L 12,4 11,3 2,3 C 1,3 1,2 1,2 1,2 1,1 2,1 L 11,1 12,0 2,0 z m 0,1.75 0,0.5 9,0 0,-0.5 -9,0 z M 4,5 C 2.491525,5 2,6 2,7 2.02381,8 2.542373,9 4,9 L 14,9 13,8 4,8 C 3,8 3,7 3,7 3,7 3,6 4,6 L 13,6 14,5 4,5 z m 0,1.75 0,0.5 9,0 0,-0.5 -9,0 z M 2,10 c -1.508475,0 -2,1 -2,2 0.02381,1 0.542373,2 2,2 l 10,0 -1,-1 -9,0 C 1,13 1,12 1,12 1,12 1,11 2,11 l 9,0 1,-1 -10,0 z m 0,1.75 0,0.5 9,0 0,-0.5 -9,0 z" id="books" style="fill: currentColor; fill-opacity: 1; fill-rule: evenodd; stroke: none"></path>
+                                  </g></svg>
+                              <span class="ml-4">M_Books</span>
+                          </a>
+                      </li>
+
+
+                      <li class="">
+                          <a href="../backend/page-employee.html" class="svg-icon">
+                              <svg width="25px" height="25px" viewBox="0 0 1024 1024" fill="currentcolor" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" >
+                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M53.6 1023.2c-6.4 0-12.8-2.4-17.6-8-4.8-4.8-7.2-11.2-6.4-18.4L80 222.4c0.8-12.8 11.2-22.4 24-22.4h211.2v-3.2c0-52.8 20.8-101.6 57.6-139.2C410.4 21.6 459.2 0.8 512 0.8c108 0 196.8 88 196.8 196.8 0 0.8-0.8 1.6-0.8 2.4v0.8H920c12.8 0 23.2 9.6 24 22.4l49.6 768.8c0.8 2.4 0.8 4 0.8 6.4-0.8 13.6-11.2 24.8-24.8 24.8H53.6z m25.6-48H944l-46.4-726.4H708v57.6h0.8c12.8 8.8 20 21.6 20 36 0 24.8-20 44.8-44.8 44.8s-44.8-20-44.8-44.8c0-14.4 7.2-27.2 20-36h0.8v-57.6H363.2v57.6h0.8c12.8 8.8 20 21.6 20 36 0 24.8-20 44.8-44.8 44.8-24.8 0-44.8-20-44.8-44.8 0-14.4 7.2-27.2 20-36h0.8v-57.6H125.6l-46.4 726.4zM512 49.6c-81.6 0-148.8 66.4-148.8 148.8v3.2h298.4l-0.8-1.6v-1.6c0-82.4-67.2-148.8-148.8-148.8z" fill="currentcolor"></path>
+                                  </g></svg>
+                              <span class="ml-4">M_Order</span>
+                          </a>
+                      </li>
+
+
+                      <li class="">
+                          <a href="../backend/page-desk.html" class="svg-icon">
+                              <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" >
+                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                      <path d="M8.24999 18L5.24999 20.25V15.75H2.25C1.85217 15.75 1.47064 15.5919 1.18934 15.3106C0.908034 15.0293 0.749999 14.6478 0.749999 14.25V2.25C0.749999 1.85217 0.908034 1.47064 1.18934 1.18934C1.47064 0.908034 1.85217 0.749999 2.25 0.749999H18.75C19.1478 0.749999 19.5293 0.908034 19.8106 1.18934C20.0919 1.47064 20.25 1.85217 20.25 2.25V6.71484"stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M5.24999 5.24999H15.75"stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M5.24999 9.74999H8.24999"stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M23.25 18.75H20.25V23.25L15.75 18.75H11.25V9.74999H23.25V18.75Z"stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                      <path d="M19.5 15H15"stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </g></svg>
+                              <span class="ml-4">M_Feedback</span>
+                          </a>
+                      </li>
+                     
+                      
+                    <%--  
+                      <li class="">
+                          <a href="blank.aspx" class="svg-icon">                        
+                              <svg class="svg-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                              </svg>
+                              <span class="ml-4">LOG OUT</span>
+                          </a>
+                       </li>
+                      --%>
+
+
+
+
+                  </ul>
+              </nav>
+              
+             
+          </div>
+      </div> 
+    </aside>
+    
+    
+    
+    <p id="con">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </p>
+    
+    
+    
+    
+    
+  <%--  <footer class="iq-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="../backend/privacy-policy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="../backend/terms-of-service.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right">
+                    <span class="mr-1"><script>document.write(new Date().getFullYear())</script>©</span> <a href="#" class="">Webkit</a>.
+                </div>
+            </div>
+        </div>
+    </footer>--%>
+   
+
+     <!---javascripts-->
+      <script src="js/animated.js"></script>
+      <script src="js/apexcharts.js"></script>
+     <script src="js/app.js"></script>
+      <script src="js/backend-bundle.min.js"></script>
+      <script src="js/bstreeview.js"></script>
+  
+      <script src="js/chart-custom.js"></script>
+      
+      <script src="js/circle-progress.js"></script>
+      <script src="js/core.js"></script>
+      <script src="js/countdown.js"></script>
+      <script src="js/country2.js"></script>
+      <script src="js/croppy.js"></script>
+      <script src="js/customizer.js"></script>
+      <script src="js/flex-tree.min.js"></script>
+      <script src="js/highcharts-3d.js"></script>
+      <script src="js/highcharts-more.js"></script>
+      <script src="js/highcharts.js"></script>
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/intro.js"></script>
+      <script src="js/jquery.appear.js"></script>
+      <script src="js/jquery.barrating.min.js"></script>
+      <script src="js/kelly.js"></script>
+      <script src="js/maps.js"></script>
+      <script src="js/masonry.pkgd.min.js"></script>
+      <script src="js/material.js"></script>
+      <script src="js/morris.js"></script>
+      <script src="js/morris.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/quill.js"></script>
+      <script src="js/raphael-min.js"></script>
+      <script src="js/rating.min.js"></script>
+      <script src="js/slider.js"></script>
+      <script src="js/sweetalert.js"></script>
+      <script src="js/table-treeview.js"></script>
+      <script src="js/tilt.jquery.min.js"></script>
+      <script src="js/tree.js"></script>
+      <script src="js/usaLow.js"></script>
+      <script src="js/validator.min.js"></script>
+      <script src="js/worldLow.js"></script>
+   
+
+
+</body>
+</html>
+

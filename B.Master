@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="B.master.cs" Inherits="Book_Town.B" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>The BookBust</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      
+  
+    
+    
+            <!-- Basic -->
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+            <!-- Mobile Metas -->
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  
+            <!-- favicon -->
+            <link rel="icon" href="images/favi.png "  sizes="250x250" type="image/gif" /> 
+            <meta name="keywords" content="" />
+            <meta name="description" content="" />
+            <meta name="author" content="" />
+
+ 
+            <!--- Button icon link---->
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.css"  />  
+         
+ 
+            <!-- font awesome style -->
+            <link href="css/font-awesome.min.css" rel="stylesheet" />
+            
+
+            <!-- Custom styles for this template -->
+            <link href="css/style.css" rel="stylesheet" />
+  
+            <!-- responsive style -->
+            <link href="css/responsive.css" rel="stylesheet" />
+
+            <!-- footer -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+            <!-- other css -->
+            <link href="css/slide.css" rel="stylesheet" />
+            <link href="css/slide.scss" rel="stylesheet" />  
+            <link href="css/ion.rangeSlider.min.css" rel="stylesheet" />
+            <link href="css/style.scss" rel="stylesheet" />
+            <link href="css/signcartic.css" rel="stylesheet" />
+           
+   
+
+
+    <!-- user icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   
+
+</head>
+
+
+<body>
+   <%--  <form id="form1" runat="server">--%>
+  <div class="hero_area">
+   
+      
+      
+
+      <!-- header section starts -->
+
+
+      <header class=" header-area header-sticky background-header header-display">
+          <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <a class="navbar-brand" href="index.html">
+
+
+                      
+                          <img src="images/logo0.png" width="200" height="90" />
+
+                  
+                  </a>
+
+
+
+                  <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+
+
+                      <ul class="navbar-nav">
+                         
+
+                           
+                          
+
+                          <li class="nav-item active">
+                              <a class="nav-link pl-lg-0" href="B1H.aspx"><b>HOME</b> <span class="sr-only">(current)</span></a>
+                          </li>
+
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="B2a.aspx"><b>ABOUT US</b> </a>
+                          </li>
+
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="B4g.aspx"><b>GENRES</b></a>
+                          </li>
+
+
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="B3b.aspx"><b>BLOG</b> </a>
+                          </li>
+
+
+
+                          <%--<li class="nav-item">
+                              <a href="Blogin.aspx" class=" nav-link" ><b>LOG IN</b></a>
+
+                          </li>--%>
+
+                            <li class="soc" title="Signup">
+                               <a href="Bsignup.aspx" class="nav-link" >
+                               <center>    <i class="fa fa-user" aria-hidden="true"></i> </center>
+
+                               </a></li>
+                            &nbsp;&nbsp;&nbsp;
+
+                          
+                          <li class="soc" title="Cart">
+                               <a href="B7c.aspx" class="nav-link"> 
+                                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                               </a></li>
+                            &nbsp;&nbsp;&nbsp;
+
+           
+                            <%-- <li class="nav-item">
+                              <a href="Blogin.aspx" class=" loglab" ><b>LOG IN</b></a>
+
+                          </li>--%>
+
+                        
+
+                      </ul>
+                   
+                     
+
+
+
+
+                  </div>
+              </nav>
+          </div>
+      </header>
+      <!-- end header section -->
+
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+         <!-- footer section -->
+
+
+    
+
+     <%-- <footer class="footer_section ">
+          <div class="footer">
+           
+              <a class="navbar-brand" href="Booktown.aspx">             
+                          <img src="images/logo0.png" width="200" height="100" />
+              </a>
+              
+              <ul class="socials">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-github"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+              <div class="footer-copyright">
+                  <p>© BookBust 2019-2023. All Rights Reserved </p>
+              </div>
+          </div>
+      </footer>--%>
+
+   
+      
+      <!-- end of footer section -->
+
+
+  <%--  </form>--%>
+
+
+
+
+
+
+
+
+      <!-- jQery -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <!--active-->
+      <script src="js/active.js"></script>
+
+      <script src="js/filter.js"></script>
+
+
+</body>
+</html>

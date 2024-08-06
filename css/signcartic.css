@@ -1,0 +1,29 @@
+﻿/*signup cart*/
+.soc {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .soc li {
+        margin: 0 10px;
+    }
+
+    .soc a {
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+        .soc a i {
+            font-size: 1.1rem;
+            width: 20px;
+            transition: color .4s ease;
+        }
+
+        .soc a:hover i {
+            color: goldenrod;
+        }

@@ -1,0 +1,92 @@
+﻿$white: #ffffff;
+$black: #000000;
+// $primary1: #f7444e;
+$primary1: #44b89d;
+$primary2: #063547;
+$textCol: #999;
+
+
+
+
+
+/* slider section */
+.slider_section {
+    flex: 0;
+    display: flex;
+    align-items: center;
+    padding: 75px 0;
+    background-color: black;
+    position: relative;
+
+    .row {
+        align-items: center;
+    }
+
+    #customCarousel1 {
+        width: 100%;
+        position: unset;
+    }
+
+    .detail-box {
+        h5 {
+            color: $primary1;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 25px;
+            line-height: 58px;
+            font-size: 3rem
+        }
+
+
+        a {
+            @include hero_btn($primary1, $white, 10px, 45px, 45px);
+            margin-top: 15px;
+        }
+    }
+
+    .img-box {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.carousel_btn_box {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+    height: 50px;
+    transform: translateY(50%);
+    z-index: 3;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: unset;
+        width: 50px;
+        height: 50px;
+        background-color: $primary2;
+        opacity: 1;
+        transition: all 0.2s;
+        font-size: 18px;
+        border-radius: 100%;
+
+        img {
+            width: 10px;
+        }
+
+        &:hover {
+            background-color: $primary1;
+        }
+    }
+}
+
+
+
+// end slider section

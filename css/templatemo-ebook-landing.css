@@ -1,0 +1,219 @@
+/*
+
+TemplateMo 588 ebook landing
+
+https://templatemo.com/tm-588-ebook-landing
+
+*/
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #E76F51;
+  --secondary-color:              #E9C46A;
+  --section-bg-color:             #f0f8ff;
+  --custom-btn-bg-color:          #F4A261;
+  --custom-btn-bg-hover-color:    #E76F51;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --link-hover-color:             #E76F51;
+
+  --body-font-family:             'Unbounded', sans-serif;
+
+  --h1-font-size:                 42px;
+  --h2-font-size:                 36px;
+  --h3-font-size:                 28px;
+  --h4-font-size:                 24px;
+  --h5-font-size:                 22px;
+  --h6-font-size:                 20px;
+  --p-font-size:                  16px;
+  --menu-font-size:               12px;
+  --btn-font-size:                14px;
+  --copyright-font-size:          14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-light:            300;
+  --font-weight-normal:           400;
+  --font-weight-semibold:         600;
+  --font-weight-bold:             700;
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: var(--body-font-family); 
+}
+
+
+/*---------------------------------------
+  THE BOOK SECTION            
+-----------------------------------------*/
+.book-section-info {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.nav-pills {
+  
+  position: sticky;
+  top: 20px;
+  padding: 30px;
+  height:600px;
+  width:350px;
+}
+
+.nav-pills .nav-link {
+ 
+  color: var(--p-color);
+  border-radius: var(--border-radius-large);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+  background:#daa520;
+  color:white;
+}
+
+.scrollspy-example-2 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.scrollspy-example-item {
+ 
+  min-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.scrollspy-example-item:last-child {
+  border-bottom: 0;
+}
+
+.scrollspy-example-item-image {
+  border-radius: var(--border-radius-medium);
+}
+
+.scrollspy-example-item h5 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.blockquote {
+  background: var(--section-bg-color);
+  border-radius: var(--border-radius-small);
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-weight-semibold);
+  color: var(--site-footer-bg-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 80px 40px 40px 40px;
+  text-align: center;
+}
+
+.blockquote::before {
+  content: "“";
+  color: var(--custom-btn-bg-color);
+  font-size: 100px;
+  line-height: 1rem;
+  display: block;
+}
+
+
+
+.black {
+    color: #daa520;
+    /*border: 5px solid #daa520;*/
+    width: 100%;
+}
+
+
+/* Style 7
+   ----------------------------- */
+.seven h1 {
+   
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    color:black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 35px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+    .seven h1:after, .seven h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #000000;
+        border-top: 1px solid #daa520;
+        height: 5px;
+        background-color: #f8f8f8;
+    }
+
+
+
+
+/*.ten h5:before {
+    background-color: #000000;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 120px;
+    margin-bottom: 1.25rem;
+
+}*/
+
+
+
+.three h5 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+    .three h5:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 55px;
+        background-color: #111;
+    }
+
+    .three h5:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        height: 1px;
+        width: 95%;
+        max-width: 855px;
+        background-color: #333;
+    }
+
+
+
+
+h5 {
+    background: linear-gradient(to right, #daa520 0%, #330867 100%);
+    color: transparent; /* hide text fill */
+    -webkit-background-clip: text;
+}
